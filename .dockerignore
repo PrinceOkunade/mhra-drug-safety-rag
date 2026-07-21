@@ -1,0 +1,23 @@
+# Keep the image small + never ship secrets or unused artefacts.
+.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+.env
+.git/
+.gitignore
+
+# Raw HTML is only needed to (re)build the index, not to serve.
+data/raw/
+data/processed/chunks.jsonl
+data/processed/chunk_debug_*.jsonl
+
+# The fine-tuned reranker was rejected (Exp 5b); champion uses the off-the-shelf model.
+models/
+
+# Dev / eval artefacts not needed at serve time.
+eval/results/
+eval/drafts/
+tests/
+notebooks/
+*.md

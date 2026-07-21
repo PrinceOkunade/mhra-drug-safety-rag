@@ -1,0 +1,724 @@
+{
+  "snapshot_id": "cd315f17d0d9",
+  "created_at": "2026-06-29",
+  "n_articles": 143,
+  "date_min": "2022-01-18",
+  "date_max": "2026-06-16",
+  "articles": [
+    {
+      "slug": "brolucizumab-beovuv-risk-of-intraocular-inflammation-and-retinal-vascular-occlusion-increased-with-short-dosing-intervals",
+      "source_url": "https://www.gov.uk/drug-safety-update/brolucizumab-beovuv-risk-of-intraocular-inflammation-and-retinal-vascular-occlusion-increased-with-short-dosing-intervals",
+      "published_date": "2022-01-18"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-january-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-january-2022",
+      "published_date": "2022-01-18"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-december-2021",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-december-2021",
+      "published_date": "2022-01-18"
+    },
+    {
+      "slug": "paclitaxel-formulations-conventional-and-nab-paclitaxel-caution-required-due-to-potential-for-medication-error",
+      "source_url": "https://www.gov.uk/drug-safety-update/paclitaxel-formulations-conventional-and-nab-paclitaxel-caution-required-due-to-potential-for-medication-error",
+      "published_date": "2022-01-18"
+    },
+    {
+      "slug": "covid-19-antivirals-reporting-to-the-uk-covid-19-antivirals-pregnancy-registry",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-antivirals-reporting-to-the-uk-covid-19-antivirals-pregnancy-registry",
+      "published_date": "2022-02-15"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-february-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-february-2022",
+      "published_date": "2022-02-15"
+    },
+    {
+      "slug": "hydroxychloroquine-chloroquine-increased-risk-of-cardiovascular-events-when-used-with-macrolide-antibiotics-reminder-of-psychiatric-reactions",
+      "source_url": "https://www.gov.uk/drug-safety-update/hydroxychloroquine-chloroquine-increased-risk-of-cardiovascular-events-when-used-with-macrolide-antibiotics-reminder-of-psychiatric-reactions",
+      "published_date": "2022-02-15"
+    },
+    {
+      "slug": "ivacaftor-tezacaftor-elexacaftor-kaftriov-in-combination-with-ivacaftor-kalydeco-risk-of-serious-liver-injury-updated-advice-on-liver-function-testing",
+      "source_url": "https://www.gov.uk/drug-safety-update/ivacaftor-tezacaftor-elexacaftor-kaftriov-in-combination-with-ivacaftor-kalydeco-risk-of-serious-liver-injury-updated-advice-on-liver-function-testing",
+      "published_date": "2022-02-15"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-january-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-january-2022",
+      "published_date": "2022-02-15"
+    },
+    {
+      "slug": "cladribine-mavenclad-new-advice-to-minimise-risk-of-serious-liver-injury",
+      "source_url": "https://www.gov.uk/drug-safety-update/cladribine-mavenclad-new-advice-to-minimise-risk-of-serious-liver-injury",
+      "published_date": "2022-03-15"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-march-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-march-2022",
+      "published_date": "2022-03-15"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-february-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-february-2022",
+      "published_date": "2022-03-15"
+    },
+    {
+      "slug": "metformin-in-pregnancy-study-shows-no-safety-concerns",
+      "source_url": "https://www.gov.uk/drug-safety-update/metformin-in-pregnancy-study-shows-no-safety-concerns",
+      "published_date": "2022-03-15"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-april-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-april-2022",
+      "published_date": "2022-04-19"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-march-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-march-2022",
+      "published_date": "2022-04-19"
+    },
+    {
+      "slug": "pregabalin-lyrica-findings-of-safety-study-on-risks-during-pregnancy",
+      "source_url": "https://www.gov.uk/drug-safety-update/pregabalin-lyrica-findings-of-safety-study-on-risks-during-pregnancy",
+      "published_date": "2022-04-19"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-may-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-may-2022",
+      "published_date": "2022-05-17"
+    },
+    {
+      "slug": "denosumab-60mg-prolia-should-not-be-used-in-patients-under-18-years-due-to-the-risk-of-serious-hypercalcaemia",
+      "source_url": "https://www.gov.uk/drug-safety-update/denosumab-60mg-prolia-should-not-be-used-in-patients-under-18-years-due-to-the-risk-of-serious-hypercalcaemia",
+      "published_date": "2022-05-17"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-april-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-april-2022",
+      "published_date": "2022-05-17"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-june-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-june-2022",
+      "published_date": "2022-06-20"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-may-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-may-2022",
+      "published_date": "2022-06-20"
+    },
+    {
+      "slug": "metformin-and-reduced-vitamin-b12-levels-new-advice-for-monitoring-patients-at-risk",
+      "source_url": "https://www.gov.uk/drug-safety-update/metformin-and-reduced-vitamin-b12-levels-new-advice-for-monitoring-patients-at-risk",
+      "published_date": "2022-06-20"
+    },
+    {
+      "slug": "roche-accu-chek-insight-insulin-pump-with-novorapid-pumpcart-insulin-cartridges-alert-following-cases-of-insulin-leakage",
+      "source_url": "https://www.gov.uk/drug-safety-update/roche-accu-chek-insight-insulin-pump-with-novorapid-pumpcart-insulin-cartridges-alert-following-cases-of-insulin-leakage",
+      "published_date": "2022-06-20"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-july-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-july-2022",
+      "published_date": "2022-07-21"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-june-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-june-2022",
+      "published_date": "2022-07-21"
+    },
+    {
+      "slug": "topiramate-topamax-start-of-safety-review-triggered-by-a-study-reporting-an-increased-risk-of-neurodevelopmental-disabilities-in-children-with-prenatal-exposure",
+      "source_url": "https://www.gov.uk/drug-safety-update/topiramate-topamax-start-of-safety-review-triggered-by-a-study-reporting-an-increased-risk-of-neurodevelopmental-disabilities-in-children-with-prenatal-exposure",
+      "published_date": "2022-07-21"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-august-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-august-2022",
+      "published_date": "2022-08-23"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-july-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-july-2022",
+      "published_date": "2022-08-23"
+    },
+    {
+      "slug": "nebulised-asthma-rescue-therapy-in-children-home-use-of-nebulisers-in-paediatric-asthma-should-be-initiated-and-managed-only-by-specialists",
+      "source_url": "https://www.gov.uk/drug-safety-update/nebulised-asthma-rescue-therapy-in-children-home-use-of-nebulisers-in-paediatric-asthma-should-be-initiated-and-managed-only-by-specialists",
+      "published_date": "2022-08-23"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-september-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-september-2022",
+      "published_date": "2022-09-26"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-august-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-august-2022",
+      "published_date": "2022-09-26"
+    },
+    {
+      "slug": "methylphenidate-long-acting-modified-release-preparations-caution-if-switching-between-products-due-to-differences-in-formulations",
+      "source_url": "https://www.gov.uk/drug-safety-update/methylphenidate-long-acting-modified-release-preparations-caution-if-switching-between-products-due-to-differences-in-formulations",
+      "published_date": "2022-09-26"
+    },
+    {
+      "slug": "rucaparib-rubracav-withdrawal-of-third-line-treatment-indication",
+      "source_url": "https://www.gov.uk/drug-safety-update/rucaparib-rubracav-withdrawal-of-third-line-treatment-indication",
+      "published_date": "2022-09-26"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-october-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-october-2022",
+      "published_date": "2022-10-25"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-september-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-september-2022",
+      "published_date": "2022-10-25"
+    },
+    {
+      "slug": "medsafetyweek-november-2022-every-yellow-card-report-helps-to-improve-patient-safety",
+      "source_url": "https://www.gov.uk/drug-safety-update/medsafetyweek-november-2022-every-yellow-card-report-helps-to-improve-patient-safety",
+      "published_date": "2022-10-25"
+    },
+    {
+      "slug": "consultation-with-healthcare-professionals-please-complete-our-consultation-to-help-influence-how-we-communicate-with-you",
+      "source_url": "https://www.gov.uk/drug-safety-update/consultation-with-healthcare-professionals-please-complete-our-consultation-to-help-influence-how-we-communicate-with-you",
+      "published_date": "2022-11-29"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-november-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-november-2022",
+      "published_date": "2022-11-29"
+    },
+    {
+      "slug": "dupilumab-dupixentv-risk-of-ocular-adverse-reactions-and-need-for-prompt-management",
+      "source_url": "https://www.gov.uk/drug-safety-update/dupilumab-dupixentv-risk-of-ocular-adverse-reactions-and-need-for-prompt-management",
+      "published_date": "2022-11-29"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-october-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-october-2022",
+      "published_date": "2022-11-29"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-december-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-december-2022",
+      "published_date": "2022-12-12"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-november-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-november-2022",
+      "published_date": "2022-12-12"
+    },
+    {
+      "slug": "valproate-reminder-of-current-pregnancy-prevention-programme-requirements-information-on-new-safety-measures-to-be-introduced-in-the-coming-months",
+      "source_url": "https://www.gov.uk/drug-safety-update/valproate-reminder-of-current-pregnancy-prevention-programme-requirements-information-on-new-safety-measures-to-be-introduced-in-the-coming-months",
+      "published_date": "2022-12-12"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-january-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-january-2023",
+      "published_date": "2023-01-25"
+    },
+    {
+      "slug": "electronic-prescribing-and-medicines-administration-systems-report-adverse-incidents-on-a-yellow-card",
+      "source_url": "https://www.gov.uk/drug-safety-update/electronic-prescribing-and-medicines-administration-systems-report-adverse-incidents-on-a-yellow-card",
+      "published_date": "2023-01-25"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-december-2022",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-december-2022",
+      "published_date": "2023-01-25"
+    },
+    {
+      "slug": "topical-testosterone-testogel-risk-of-harm-to-children-following-accidental-exposure",
+      "source_url": "https://www.gov.uk/drug-safety-update/topical-testosterone-testogel-risk-of-harm-to-children-following-accidental-exposure",
+      "published_date": "2023-01-25"
+    },
+    {
+      "slug": "xaqua-metolazone-5mg-tablets-exercise-caution-when-switching-patients-between-metolazone-preparations",
+      "source_url": "https://www.gov.uk/drug-safety-update/xaqua-metolazone-5mg-tablets-exercise-caution-when-switching-patients-between-metolazone-preparations",
+      "published_date": "2023-01-25"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-february-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-february-2023",
+      "published_date": "2023-02-27"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-january-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-january-2023",
+      "published_date": "2023-02-27"
+    },
+    {
+      "slug": "covid-19-vaccines-and-medicines-updates-for-march-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/covid-19-vaccines-and-medicines-updates-for-march-2023",
+      "published_date": "2023-03-23"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-february-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-february-2023",
+      "published_date": "2023-03-23"
+    },
+    {
+      "slug": "pholcodine-containing-cough-and-cold-medicines-withdrawal-from-uk-market-as-a-precautionary-measure",
+      "source_url": "https://www.gov.uk/drug-safety-update/pholcodine-containing-cough-and-cold-medicines-withdrawal-from-uk-market-as-a-precautionary-measure",
+      "published_date": "2023-03-23"
+    },
+    {
+      "slug": "terlipressin-new-recommendations-to-reduce-risks-of-respiratory-failure-and-septic-shock-in-patients-with-type-1-hepatorenal-syndrome",
+      "source_url": "https://www.gov.uk/drug-safety-update/terlipressin-new-recommendations-to-reduce-risks-of-respiratory-failure-and-septic-shock-in-patients-with-type-1-hepatorenal-syndrome",
+      "published_date": "2023-03-23"
+    },
+    {
+      "slug": "isotretinoin-roaccutanev-new-safety-measures-to-be-introduced-in-the-coming-months-including-additional-oversight-on-initiation-of-treatment-for-patients-under-18-years",
+      "source_url": "https://www.gov.uk/drug-safety-update/isotretinoin-roaccutanev-new-safety-measures-to-be-introduced-in-the-coming-months-including-additional-oversight-on-initiation-of-treatment-for-patients-under-18-years",
+      "published_date": "2023-04-26"
+    },
+    {
+      "slug": "janus-kinase-jak-inhibitors-new-measures-to-reduce-risks-of-major-cardiovascular-events-malignancy-venous-thromboembolism-serious-infections-and-increased-mortality",
+      "source_url": "https://www.gov.uk/drug-safety-update/janus-kinase-jak-inhibitors-new-measures-to-reduce-risks-of-major-cardiovascular-events-malignancy-venous-thromboembolism-serious-infections-and-increased-mortality",
+      "published_date": "2023-04-26"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-march-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-march-2023",
+      "published_date": "2023-04-26"
+    },
+    {
+      "slug": "nitrofurantoin-reminder-of-the-risks-of-pulmonary-and-hepatic-adverse-drug-reactions",
+      "source_url": "https://www.gov.uk/drug-safety-update/nitrofurantoin-reminder-of-the-risks-of-pulmonary-and-hepatic-adverse-drug-reactions",
+      "published_date": "2023-04-26"
+    },
+    {
+      "slug": "direct-acting-oral-anticoagulants-doacs-paediatric-formulations-reminder-of-dose-adjustments-in-patients-with-renal-impairment",
+      "source_url": "https://www.gov.uk/drug-safety-update/direct-acting-oral-anticoagulants-doacs-paediatric-formulations-reminder-of-dose-adjustments-in-patients-with-renal-impairment",
+      "published_date": "2023-05-25"
+    },
+    {
+      "slug": "febuxostat-updated-advice-for-the-treatment-of-patients-with-a-history-of-major-cardiovascular-disease",
+      "source_url": "https://www.gov.uk/drug-safety-update/febuxostat-updated-advice-for-the-treatment-of-patients-with-a-history-of-major-cardiovascular-disease",
+      "published_date": "2023-05-25"
+    },
+    {
+      "slug": "glucose-solutions-recommendations-to-minimise-the-risks-associated-with-the-accidental-use-of-glucose-solutions-instead-of-saline-solutions-in-arterial-lines",
+      "source_url": "https://www.gov.uk/drug-safety-update/glucose-solutions-recommendations-to-minimise-the-risks-associated-with-the-accidental-use-of-glucose-solutions-instead-of-saline-solutions-in-arterial-lines",
+      "published_date": "2023-05-25"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-april-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-april-2023",
+      "published_date": "2023-05-25"
+    },
+    {
+      "slug": "adrenaline-auto-injectors-aais-new-guidance-and-resources-for-safe-use",
+      "source_url": "https://www.gov.uk/drug-safety-update/adrenaline-auto-injectors-aais-new-guidance-and-resources-for-safe-use",
+      "published_date": "2023-06-27"
+    },
+    {
+      "slug": "calcium-chloride-calcium-gluconate-potential-risk-of-underdosing-with-calcium-gluconate-in-severe-hyperkalaemia",
+      "source_url": "https://www.gov.uk/drug-safety-update/calcium-chloride-calcium-gluconate-potential-risk-of-underdosing-with-calcium-gluconate-in-severe-hyperkalaemia",
+      "published_date": "2023-06-27"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-may-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-may-2023",
+      "published_date": "2023-06-27"
+    },
+    {
+      "slug": "non-steroidal-anti-inflammatory-drugs-nsaids-potential-risks-following-prolonged-use-after-20-weeks-of-pregnancy",
+      "source_url": "https://www.gov.uk/drug-safety-update/non-steroidal-anti-inflammatory-drugs-nsaids-potential-risks-following-prolonged-use-after-20-weeks-of-pregnancy",
+      "published_date": "2023-06-27"
+    },
+    {
+      "slug": "codeine-linctus-public-consultation-on-the-proposal-to-reclassify-to-a-prescription-only-medicine",
+      "source_url": "https://www.gov.uk/drug-safety-update/codeine-linctus-public-consultation-on-the-proposal-to-reclassify-to-a-prescription-only-medicine",
+      "published_date": "2023-07-24"
+    },
+    {
+      "slug": "hyoscine-hydrobromide-patches-scopoderm-1-dot-5mg-patch-or-scopoderm-tts-patch-risk-of-anticholinergic-side-effects-including-hyperthermia",
+      "source_url": "https://www.gov.uk/drug-safety-update/hyoscine-hydrobromide-patches-scopoderm-1-dot-5mg-patch-or-scopoderm-tts-patch-risk-of-anticholinergic-side-effects-including-hyperthermia",
+      "published_date": "2023-07-24"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-june-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-june-2023",
+      "published_date": "2023-07-24"
+    },
+    {
+      "slug": "fluoroquinolone-antibiotics-reminder-of-the-risk-of-disabling-and-potentially-long-lasting-or-irreversible-side-effects",
+      "source_url": "https://www.gov.uk/drug-safety-update/fluoroquinolone-antibiotics-reminder-of-the-risk-of-disabling-and-potentially-long-lasting-or-irreversible-side-effects",
+      "published_date": "2023-08-30"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-july-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-july-2023",
+      "published_date": "2023-08-30"
+    },
+    {
+      "slug": "methotrexate-advise-patients-to-take-precautions-in-the-sun-to-avoid-photosensitivity-reactions",
+      "source_url": "https://www.gov.uk/drug-safety-update/methotrexate-advise-patients-to-take-precautions-in-the-sun-to-avoid-photosensitivity-reactions",
+      "published_date": "2023-08-30"
+    },
+    {
+      "slug": "valproate-re-analysis-of-study-on-risks-in-children-of-men-taking-valproate",
+      "source_url": "https://www.gov.uk/drug-safety-update/valproate-re-analysis-of-study-on-risks-in-children-of-men-taking-valproate",
+      "published_date": "2023-08-30"
+    },
+    {
+      "slug": "fluoroquinolone-antibiotics-suicidal-thoughts-and-behaviour",
+      "source_url": "https://www.gov.uk/drug-safety-update/fluoroquinolone-antibiotics-suicidal-thoughts-and-behaviour",
+      "published_date": "2023-09-26"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-august-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-august-2023",
+      "published_date": "2023-09-26"
+    },
+    {
+      "slug": "statins-very-infrequent-reports-of-myasthenia-gravis",
+      "source_url": "https://www.gov.uk/drug-safety-update/statins-very-infrequent-reports-of-myasthenia-gravis",
+      "published_date": "2023-09-26"
+    },
+    {
+      "slug": "isotretinoin-roaccutanev-introduction-of-new-safety-measures-including-additional-oversight-of-the-initiation-of-treatment-for-patients-under-18-years-of-age",
+      "source_url": "https://www.gov.uk/drug-safety-update/isotretinoin-roaccutanev-introduction-of-new-safety-measures-including-additional-oversight-of-the-initiation-of-treatment-for-patients-under-18-years-of-age",
+      "published_date": "2023-10-31"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-september-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-september-2023",
+      "published_date": "2023-10-31"
+    },
+    {
+      "slug": "medsafetyweek-november-2023-your-yellow-card-report-helps-to-improve-patient-safety",
+      "source_url": "https://www.gov.uk/drug-safety-update/medsafetyweek-november-2023-your-yellow-card-report-helps-to-improve-patient-safety",
+      "published_date": "2023-10-31"
+    },
+    {
+      "slug": "valproate-dispense-full-packs-of-valproate-containing-medicines",
+      "source_url": "https://www.gov.uk/drug-safety-update/valproate-dispense-full-packs-of-valproate-containing-medicines",
+      "published_date": "2023-10-31"
+    },
+    {
+      "slug": "e-cigarette-use-or-vaping-reminder-to-remain-vigilant-for-suspected-adverse-reactions-and-safety-concerns-and-report-them-to-the-yellow-card-scheme",
+      "source_url": "https://www.gov.uk/drug-safety-update/e-cigarette-use-or-vaping-reminder-to-remain-vigilant-for-suspected-adverse-reactions-and-safety-concerns-and-report-them-to-the-yellow-card-scheme",
+      "published_date": "2023-11-23"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-october-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-october-2023",
+      "published_date": "2023-11-23"
+    },
+    {
+      "slug": "nirmatrelvir-ritonavir-paxlovidv-be-alert-to-the-risk-of-drug-interactions-with-ritonavir",
+      "source_url": "https://www.gov.uk/drug-safety-update/nirmatrelvir-ritonavir-paxlovidv-be-alert-to-the-risk-of-drug-interactions-with-ritonavir",
+      "published_date": "2023-11-23"
+    },
+    {
+      "slug": "ozempicv-semaglutide-and-saxenda-liraglutide-vigilance-required-due-to-potentially-harmful-falsified-products",
+      "source_url": "https://www.gov.uk/drug-safety-update/ozempicv-semaglutide-and-saxenda-liraglutide-vigilance-required-due-to-potentially-harmful-falsified-products",
+      "published_date": "2023-11-23"
+    },
+    {
+      "slug": "aripiprazole-abilify-and-generic-brands-risk-of-pathological-gambling",
+      "source_url": "https://www.gov.uk/drug-safety-update/aripiprazole-abilify-and-generic-brands-risk-of-pathological-gambling",
+      "published_date": "2023-12-18"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-november-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-november-2023",
+      "published_date": "2023-12-18"
+    },
+    {
+      "slug": "vitamin-b12-hydroxocobalamin-cyanocobalamin-advise-patients-with-known-cobalt-allergy-to-be-vigilant-for-sensitivity-reactions",
+      "source_url": "https://www.gov.uk/drug-safety-update/vitamin-b12-hydroxocobalamin-cyanocobalamin-advise-patients-with-known-cobalt-allergy-to-be-vigilant-for-sensitivity-reactions",
+      "published_date": "2023-12-18"
+    },
+    {
+      "slug": "fluoroquinolone-antibiotics-must-now-only-be-prescribed-when-other-commonly-recommended-antibiotics-are-inappropriate",
+      "source_url": "https://www.gov.uk/drug-safety-update/fluoroquinolone-antibiotics-must-now-only-be-prescribed-when-other-commonly-recommended-antibiotics-are-inappropriate",
+      "published_date": "2024-01-22"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-december-2023",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-december-2023",
+      "published_date": "2024-01-22"
+    },
+    {
+      "slug": "omega-3-acid-ethyl-ester-medicines-omacor-slash-teromeg-1000mg-capsules-dose-dependent-increased-risk-of-atrial-fibrillation-in-patients-with-established-cardiovascular-diseases-or-cardiovascular-risk-factors",
+      "source_url": "https://www.gov.uk/drug-safety-update/omega-3-acid-ethyl-ester-medicines-omacor-slash-teromeg-1000mg-capsules-dose-dependent-increased-risk-of-atrial-fibrillation-in-patients-with-established-cardiovascular-diseases-or-cardiovascular-risk-factors",
+      "published_date": "2024-01-22"
+    },
+    {
+      "slug": "valproate-belvo-convulex-depakote-dyzantil-epilim-epilim-chrono-or-chronosphere-episenta-epival-and-syonellv-new-safety-and-educational-materials-to-support-regulatory-measures-in-men-and-women-under-55-years-of-age",
+      "source_url": "https://www.gov.uk/drug-safety-update/valproate-belvo-convulex-depakote-dyzantil-epilim-epilim-chrono-or-chronosphere-episenta-epival-and-syonellv-new-safety-and-educational-materials-to-support-regulatory-measures-in-men-and-women-under-55-years-of-age",
+      "published_date": "2024-01-22"
+    },
+    {
+      "slug": "codeine-linctus-codeine-oral-solutions-reclassification-to-prescription-only-medicine",
+      "source_url": "https://www.gov.uk/drug-safety-update/codeine-linctus-codeine-oral-solutions-reclassification-to-prescription-only-medicine",
+      "published_date": "2024-02-20"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-january-2024",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-january-2024",
+      "published_date": "2024-02-20"
+    },
+    {
+      "slug": "pseudoephedrine-very-rare-risk-of-posterior-reversible-encephalopathy-syndrome-pres-and-reversible-cerebral-vasoconstriction-syndrome-rcvs",
+      "source_url": "https://www.gov.uk/drug-safety-update/pseudoephedrine-very-rare-risk-of-posterior-reversible-encephalopathy-syndrome-pres-and-reversible-cerebral-vasoconstriction-syndrome-rcvs",
+      "published_date": "2024-02-20"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-february-2024",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-february-2024",
+      "published_date": "2024-03-27"
+    },
+    {
+      "slug": "finasteride-reminder-of-the-risk-psychiatric-side-effects-and-of-sexual-side-effects-which-may-persist-after-discontinuation-of-treatment",
+      "source_url": "https://www.gov.uk/drug-safety-update/finasteride-reminder-of-the-risk-psychiatric-side-effects-and-of-sexual-side-effects-which-may-persist-after-discontinuation-of-treatment",
+      "published_date": "2024-04-29"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-march-2024",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-march-2024",
+      "published_date": "2024-04-29"
+    },
+    {
+      "slug": "montelukast-reminder-of-the-risk-of-neuropsychiatric-reactions",
+      "source_url": "https://www.gov.uk/drug-safety-update/montelukast-reminder-of-the-risk-of-neuropsychiatric-reactions",
+      "published_date": "2024-04-29"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-april-2024",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-april-2024",
+      "published_date": "2024-05-29"
+    },
+    {
+      "slug": "topical-steroids-introduction-of-new-labelling-and-a-reminder-of-the-possibility-of-severe-side-effects-including-topical-steroid-withdrawal-reactions",
+      "source_url": "https://www.gov.uk/drug-safety-update/topical-steroids-introduction-of-new-labelling-and-a-reminder-of-the-possibility-of-severe-side-effects-including-topical-steroid-withdrawal-reactions",
+      "published_date": "2024-05-29"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-may-2024",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-may-2024",
+      "published_date": "2024-06-20"
+    },
+    {
+      "slug": "topiramate-topamax-introduction-of-new-safety-measures-including-a-pregnancy-prevention-programme",
+      "source_url": "https://www.gov.uk/drug-safety-update/topiramate-topamax-introduction-of-new-safety-measures-including-a-pregnancy-prevention-programme",
+      "published_date": "2024-06-20"
+    },
+    {
+      "slug": "warfarin-be-alert-to-the-risk-of-drug-interactions-with-tramadol",
+      "source_url": "https://www.gov.uk/drug-safety-update/warfarin-be-alert-to-the-risk-of-drug-interactions-with-tramadol",
+      "published_date": "2024-06-20"
+    },
+    {
+      "slug": "epimax-ointment-and-epimax-paraffin-free-ointment-reports-of-ocular-surface-toxicity-and-ocular-chemical-injury",
+      "source_url": "https://www.gov.uk/drug-safety-update/epimax-ointment-and-epimax-paraffin-free-ointment-reports-of-ocular-surface-toxicity-and-ocular-chemical-injury",
+      "published_date": "2024-07-23"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-june-2024",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-june-2024",
+      "published_date": "2024-07-23"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-july-2024",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-july-2024",
+      "published_date": "2024-08-21"
+    },
+    {
+      "slug": "yellow-card-biobank-call-to-contribute-to-study-of-genetic-links-to-side-effects",
+      "source_url": "https://www.gov.uk/drug-safety-update/yellow-card-biobank-call-to-contribute-to-study-of-genetic-links-to-side-effects",
+      "published_date": "2024-08-21"
+    },
+    {
+      "slug": "valproate-use-in-men-as-a-precaution-men-and-their-partners-should-use-effective-contraception",
+      "source_url": "https://www.gov.uk/drug-safety-update/valproate-use-in-men-as-a-precaution-men-and-their-partners-should-use-effective-contraception",
+      "published_date": "2024-09-05"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-august-2024",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-august-2024",
+      "published_date": "2024-09-26"
+    },
+    {
+      "slug": "bromocriptine-monitor-blood-pressure-when-prescribing-bromocriptine-for-prevention-or-inhibition-of-post-partum-physiological-lactation",
+      "source_url": "https://www.gov.uk/drug-safety-update/bromocriptine-monitor-blood-pressure-when-prescribing-bromocriptine-for-prevention-or-inhibition-of-post-partum-physiological-lactation",
+      "published_date": "2024-10-24"
+    },
+    {
+      "slug": "glp-1-receptor-agonists-reminder-of-the-potential-side-effects-and-to-be-aware-of-the-potential-for-misuse",
+      "source_url": "https://www.gov.uk/drug-safety-update/glp-1-receptor-agonists-reminder-of-the-potential-side-effects-and-to-be-aware-of-the-potential-for-misuse",
+      "published_date": "2024-10-24"
+    },
+    {
+      "slug": "insulin-pumps-and-continuous-glucose-monitoring-cgm-equipment-guidance-for-users-on-reporting-suspected-adverse-incidents-and-safety-concerns-to-the-mhras-yellow-card-scheme",
+      "source_url": "https://www.gov.uk/drug-safety-update/insulin-pumps-and-continuous-glucose-monitoring-cgm-equipment-guidance-for-users-on-reporting-suspected-adverse-incidents-and-safety-concerns-to-the-mhras-yellow-card-scheme",
+      "published_date": "2024-10-24"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-september-2024",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-september-2024",
+      "published_date": "2024-10-24"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-october-2024",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-october-2024",
+      "published_date": "2024-11-06"
+    },
+    {
+      "slug": "medsafetyweek-november-2024-your-yellow-card-report-helps-prevent-future-harm-to-others-and-improves-patient-safety",
+      "source_url": "https://www.gov.uk/drug-safety-update/medsafetyweek-november-2024-your-yellow-card-report-helps-prevent-future-harm-to-others-and-improves-patient-safety",
+      "published_date": "2024-11-06"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-november-2024",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-november-2024",
+      "published_date": "2024-12-12"
+    },
+    {
+      "slug": "glp-1-and-dual-gip-slash-glp-1-receptor-agonists-potential-risk-of-pulmonary-aspiration-during-general-anaesthesia-or-deep-sedation",
+      "source_url": "https://www.gov.uk/drug-safety-update/glp-1-and-dual-gip-slash-glp-1-receptor-agonists-potential-risk-of-pulmonary-aspiration-during-general-anaesthesia-or-deep-sedation",
+      "published_date": "2025-01-28"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-december-2024",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-december-2024",
+      "published_date": "2025-01-28"
+    },
+    {
+      "slug": "valproate-belvo-convulex-depakote-dyzantil-epilim-epilim-chrono-or-chronosphere-episenta-epival-and-syonellv-review-by-two-specialists-is-required-for-initiating-valproate-but-not-for-male-patients-already-taking-valproate",
+      "source_url": "https://www.gov.uk/drug-safety-update/valproate-belvo-convulex-depakote-dyzantil-epilim-epilim-chrono-or-chronosphere-episenta-epival-and-syonellv-review-by-two-specialists-is-required-for-initiating-valproate-but-not-for-male-patients-already-taking-valproate",
+      "published_date": "2025-02-13"
+    },
+    {
+      "slug": "letters-and-medicine-recalls-sent-to-healthcare-professionals-in-january-2025",
+      "source_url": "https://www.gov.uk/drug-safety-update/letters-and-medicine-recalls-sent-to-healthcare-professionals-in-january-2025",
+      "published_date": "2025-02-26"
+    },
+    {
+      "slug": "prolonged-release-opioids-removal-of-indication-for-relief-of-post-operative-pain",
+      "source_url": "https://www.gov.uk/drug-safety-update/prolonged-release-opioids-removal-of-indication-for-relief-of-post-operative-pain",
+      "published_date": "2025-03-12"
+    },
+    {
+      "slug": "fezolinetantv-veoza-risk-of-liver-injury-new-recommendations-to-minimise-risk",
+      "source_url": "https://www.gov.uk/drug-safety-update/fezolinetantv-veoza-risk-of-liver-injury-new-recommendations-to-minimise-risk",
+      "published_date": "2025-04-10"
+    },
+    {
+      "slug": "short-acting-beta-2-agonists-saba-salbutamol-and-terbutaline-reminder-of-the-risks-from-overuse-in-asthma-and-to-be-aware-of-changes-in-the-saba-prescribing-guidelines",
+      "source_url": "https://www.gov.uk/drug-safety-update/short-acting-beta-2-agonists-saba-salbutamol-and-terbutaline-reminder-of-the-risks-from-overuse-in-asthma-and-to-be-aware-of-changes-in-the-saba-prescribing-guidelines",
+      "published_date": "2025-04-24"
+    },
+    {
+      "slug": "kaftriov-ivacaftor-tezacaftor-elexacaftor-risk-of-psychological-side-effects",
+      "source_url": "https://www.gov.uk/drug-safety-update/kaftriov-ivacaftor-tezacaftor-elexacaftor-risk-of-psychological-side-effects",
+      "published_date": "2025-05-07"
+    },
+    {
+      "slug": "thiopurines-and-intrahepatic-cholestasis-of-pregnancy",
+      "source_url": "https://www.gov.uk/drug-safety-update/thiopurines-and-intrahepatic-cholestasis-of-pregnancy",
+      "published_date": "2025-05-15"
+    },
+    {
+      "slug": "valproate-belvo-convulex-depakote-dyzantil-epilim-epilim-chrono-or-chronosphere-episenta-epival-and-syonellv-updated-safety-and-educational-materials-to-support-patient-discussion-on-reproductive-risks",
+      "source_url": "https://www.gov.uk/drug-safety-update/valproate-belvo-convulex-depakote-dyzantil-epilim-epilim-chrono-or-chronosphere-episenta-epival-and-syonellv-updated-safety-and-educational-materials-to-support-patient-discussion-on-reproductive-risks",
+      "published_date": "2025-06-10"
+    },
+    {
+      "slug": "abrysvov-pfizer-rsv-vaccine-and-arexvyv-gsk-rsv-vaccine-be-alert-to-a-small-risk-of-guillain-barre-syndrome-following-vaccination-in-older-adults",
+      "source_url": "https://www.gov.uk/drug-safety-update/abrysvov-pfizer-rsv-vaccine-and-arexvyv-gsk-rsv-vaccine-be-alert-to-a-small-risk-of-guillain-barre-syndrome-following-vaccination-in-older-adults",
+      "published_date": "2025-07-07"
+    },
+    {
+      "slug": "paracetamol-and-pregnancy-reminder-that-taking-paracetamol-during-pregnancy-remains-safe",
+      "source_url": "https://www.gov.uk/drug-safety-update/paracetamol-and-pregnancy-reminder-that-taking-paracetamol-during-pregnancy-remains-safe",
+      "published_date": "2025-09-23"
+    },
+    {
+      "slug": "number-medsafetyweek-3-9-november-2025-a-call-to-action-to-improve-patient-safety",
+      "source_url": "https://www.gov.uk/drug-safety-update/number-medsafetyweek-3-9-november-2025-a-call-to-action-to-improve-patient-safety",
+      "published_date": "2025-10-23"
+    },
+    {
+      "slug": "isotretinoin-updates-to-prescribing-guidance-and-survey-of-services",
+      "source_url": "https://www.gov.uk/drug-safety-update/isotretinoin-updates-to-prescribing-guidance-and-survey-of-services",
+      "published_date": "2025-10-27"
+    },
+    {
+      "slug": "mesalazine-and-idiopathic-intracranial-hypertension",
+      "source_url": "https://www.gov.uk/drug-safety-update/mesalazine-and-idiopathic-intracranial-hypertension",
+      "published_date": "2025-12-04"
+    },
+    {
+      "slug": "rybelsus-r-semaglutide-tablets-transition-to-new-formulation-and-risk-of-medication-error",
+      "source_url": "https://www.gov.uk/drug-safety-update/rybelsus-r-semaglutide-tablets-transition-to-new-formulation-and-risk-of-medication-error",
+      "published_date": "2025-12-17"
+    },
+    {
+      "slug": "improving-information-supplied-with-gabapentinoids-pregabalin-slash-gabapentin-benzodiazepines-and-z-drugs",
+      "source_url": "https://www.gov.uk/drug-safety-update/improving-information-supplied-with-gabapentinoids-pregabalin-slash-gabapentin-benzodiazepines-and-z-drugs",
+      "published_date": "2026-01-08"
+    },
+    {
+      "slug": "isotretinoin-changes-to-prescribing-guidance-and-additional-risk-minimisation-measures",
+      "source_url": "https://www.gov.uk/drug-safety-update/isotretinoin-changes-to-prescribing-guidance-and-additional-risk-minimisation-measures",
+      "published_date": "2026-01-22"
+    },
+    {
+      "slug": "glp-1-receptor-agonists-and-dual-glp-1-slash-gip-receptor-agonists-strengthened-warnings-on-acute-pancreatitis-including-necrotising-and-fatal-cases",
+      "source_url": "https://www.gov.uk/drug-safety-update/glp-1-receptor-agonists-and-dual-glp-1-slash-gip-receptor-agonists-strengthened-warnings-on-acute-pancreatitis-including-necrotising-and-fatal-cases",
+      "published_date": "2026-01-29"
+    },
+    {
+      "slug": "semaglutide-wegovy-ozempic-and-rybelsus-risk-of-non-arteritic-anterior-ischemic-optic-neuropathy-naion",
+      "source_url": "https://www.gov.uk/drug-safety-update/semaglutide-wegovy-ozempic-and-rybelsus-risk-of-non-arteritic-anterior-ischemic-optic-neuropathy-naion",
+      "published_date": "2026-02-05"
+    },
+    {
+      "slug": "ixchiq-chikungunya-vaccine-temporary-suspension-in-people-aged-65-years-or-older",
+      "source_url": "https://www.gov.uk/drug-safety-update/ixchiq-chikungunya-vaccine-temporary-suspension-in-people-aged-65-years-or-older",
+      "published_date": "2026-02-11"
+    },
+    {
+      "slug": "ixchiq-chikungunya-vaccine-updates-to-restrictions-of-use-following-safety-review",
+      "source_url": "https://www.gov.uk/drug-safety-update/ixchiq-chikungunya-vaccine-updates-to-restrictions-of-use-following-safety-review",
+      "published_date": "2026-02-11"
+    },
+    {
+      "slug": "falsified-mounjaro-kwikpen-15mg-pre-filled-pens",
+      "source_url": "https://www.gov.uk/drug-safety-update/falsified-mounjaro-kwikpen-15mg-pre-filled-pens",
+      "published_date": "2026-02-24"
+    },
+    {
+      "slug": "nasal-decongestant-sprays-and-drops-containing-xylometazoline-hydrochloride-slash-oxymetazoline-hydrochloride-increased-risk-of-rebound-congestion-rhinitis-medicamentosa-and-tachyphylaxis-with-overuse",
+      "source_url": "https://www.gov.uk/drug-safety-update/nasal-decongestant-sprays-and-drops-containing-xylometazoline-hydrochloride-slash-oxymetazoline-hydrochloride-increased-risk-of-rebound-congestion-rhinitis-medicamentosa-and-tachyphylaxis-with-overuse",
+      "published_date": "2026-04-30"
+    },
+    {
+      "slug": "finasteride-and-dutasteride-updated-safety-warnings-for-psychiatric-side-effects-and-sexual-dysfunction",
+      "source_url": "https://www.gov.uk/drug-safety-update/finasteride-and-dutasteride-updated-safety-warnings-for-psychiatric-side-effects-and-sexual-dysfunction",
+      "published_date": "2026-05-11"
+    },
+    {
+      "slug": "amiodarone-cordarone-x-reminder-of-risks-of-treatment-and-need-for-patient-monitoring-and-supervision",
+      "source_url": "https://www.gov.uk/drug-safety-update/amiodarone-cordarone-x-reminder-of-risks-of-treatment-and-need-for-patient-monitoring-and-supervision",
+      "published_date": "2026-05-20"
+    },
+    {
+      "slug": "ace-inhibitors-be-aware-of-the-distinction-between-bradykinin-and-histamine-mediated-angioedema-as-treatment-strategies-differ-significantly",
+      "source_url": "https://www.gov.uk/drug-safety-update/ace-inhibitors-be-aware-of-the-distinction-between-bradykinin-and-histamine-mediated-angioedema-as-treatment-strategies-differ-significantly",
+      "published_date": "2026-06-16"
+    }
+  ]
+}

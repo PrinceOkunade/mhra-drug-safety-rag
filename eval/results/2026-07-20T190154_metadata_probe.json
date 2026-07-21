@@ -1,0 +1,56 @@
+{
+  "n": 6,
+  "off_pass": 6,
+  "on_pass": 6,
+  "delta": 0,
+  "per_item": [
+    {
+      "id": "R1",
+      "property": "register",
+      "off_pass": true,
+      "on_pass": true,
+      "off_reason": "The answer correctly provides patient-facing advice about symptoms to watch for and when to seek medical help, without presenting clinical instructions like prescribing or dosing decisions as patient advice.",
+      "on_reason": "The answer correctly provides patient-facing advice about symptoms to watch for, when to seek medical help, and reassurance about continuing metformin, without presenting clinical monitoring protocols or prescribing decisions as patient instructions."
+    },
+    {
+      "id": "R3",
+      "property": "register",
+      "off_pass": true,
+      "on_pass": true,
+      "off_reason": "The answer correctly provides patient-facing advice, including warning signs to watch for and when to seek urgent medical help, without presenting clinical instructions meant only for healthcare professionals.",
+      "on_reason": "The answer provides appropriate patient-facing advice, including warning signs to watch for, when to seek urgent help, and a recommendation to discuss with their doctor, without presenting clinical-only instructions as patient directives."
+    },
+    {
+      "id": "R4",
+      "property": "register",
+      "off_pass": true,
+      "on_pass": true,
+      "off_reason": "The answer correctly conveys patient-facing advice about liver injury risk, the timing of risk, the need for blood tests before each course, symptoms to watch for, and when to seek help, without presenting clinical-only instructions as patient directives.",
+      "on_reason": "The answer correctly presents patient-facing advice including symptoms to watch for, when to seek help, and the need for blood tests (framed as something the patient should expect/comply with rather than a clinical instruction to perform), consistent with the reference."
+    },
+    {
+      "id": "R5",
+      "property": "register",
+      "off_pass": true,
+      "on_pass": true,
+      "off_reason": "The answer provides appropriate patient-facing advice, including what symptoms to watch for, when to seek medical help, and a clear instruction not to self-manage eye problems, without presenting clinical-only instructions as patient advice.",
+      "on_reason": "The answer provides appropriate patient-facing advice by describing symptoms to watch for, advising prompt consultation with a healthcare professional for new or worsening eye problems, and flagging urgent symptoms, without presenting clinical-only instructions as patient advice."
+    },
+    {
+      "id": "R6",
+      "property": "register",
+      "off_pass": true,
+      "on_pass": true,
+      "off_reason": "The answer correctly provides patient-facing advice about warning symptoms to watch for after brolucizumab injection and when to seek urgent help, matching the reference without including healthcare-professional-only clinical instructions.",
+      "on_reason": "The answer correctly provides patient-facing advice about warning symptoms to watch for and when to seek urgent help, matching the reference without including any healthcare-professional-only clinical instructions."
+    },
+    {
+      "id": "S1",
+      "property": "supersession",
+      "off_pass": true,
+      "on_pass": true,
+      "off_reason": "The answer clearly conveys that the isotretinoin risk-minimisation measures have been changed/updated, detailing the new measures endorsed by the CHM, consistent with the current MHRA position.",
+      "on_reason": "The answer clearly conveys that isotretinoin risk-minimisation measures have been changed/updated, consistent with the current MHRA position endorsed by the Commission on Human Medicines."
+    }
+  ]
+}

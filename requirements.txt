@@ -1,0 +1,18 @@
+# CPU-only torch wheels (keeps the install light on Hugging Face CPU free tier / Cloud Run;
+# the default PyPI torch bundles CUDA and is ~2GB). Harmless on machines that already have torch.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.0
+sentence-transformers>=3.0   # pulls torch + transformers (embeddings)
+faiss-cpu>=1.8
+rank-bm25>=0.2.2             # Phase 3 Exp 3: BM25 sparse retrieval for hybrid search
+datasets>=2.0               # Phase 3 Exp 5: required by sentence-transformers CrossEncoder.fit
+accelerate>=1.1.0           # Phase 3 Exp 5: HF Trainer backend for CrossEncoder.fit
+anthropic>=0.40              # generation: Claude Haiku 4.5
+python-dotenv>=1.0
+pyyaml>=6.0
+streamlit>=1.30
+fastapi>=0.110              # Phase 4: serving the champion pipeline as an API
+uvicorn[standard]>=0.29     # Phase 4: ASGI server (Cloud Run entrypoint)

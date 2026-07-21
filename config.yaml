@@ -1,0 +1,48 @@
+# Single source of truth for the pipeline. Nothing downstream is hard-coded;
+# Phase 3's eval harness will sweep these values.
+
+corpus:
+  # Enumerated via the gov.uk Search API (filter_content_store_document_type=
+  # drug_safety_update), date-bounded by public_timestamp.
+  search_api: "https://www.gov.uk/api/search.json"
+  base_url: "https://www.gov.uk"
+  published_after: "2022-01-01"     # extended start; uniform HTML confirmed to 2021 via diff
+  published_before: "2026-07-01"    # through present (~143 articles)
+  max_articles: 200
+
+chunk:
+  strategy: "fixed"             # hybrid retrieval over fixed dense chunks (see retriever below)
+  size_tokens: 512              # also the small-to-big PARENT window (non-overlapping)
+  overlap_tokens: 50
+  child_size_tokens: 128        # small-to-big: the small unit we MATCH on
+  child_overlap_tokens: 16
+  header_min_section_tokens: 64 # Exp 1-corrected floor (set once on principle; 0 = v1)
+
+embedding:
+  model_name: "BAAI/bge-small-en-v1.5"   # 512-token capacity matches chunk size
+  # bge models want this instruction on the QUERY side only (not on passages):
+  query_prefix: "Represent this sentence for searching relevant passages: "
+
+retriever:
+  # DEPLOYED CHAMPION: hybrid retrieval (Exp 3), dense + BM25 fused by RRF.
+  # The off-the-shelf cross-encoder reranker (Exp 5a) was measured and REJECTED for
+  # deployment: full generation eval (eval/results/2026-07-21T233340_full.json vs the
+  # reranked 2026-07-20T223305_full.json) showed IDENTICAL correctness/faithfulness/
+  # refusal and zero answer changes, for 15x the end-to-end latency (2.72s vs 41.54s;
+  # python -m src.eval.bench_latency). Flip reranker_enabled back to true to re-deploy
+  # it; the code, the pairs-generator, and both eval rows all remain in the repo.
+  type: "hybrid"
+  top_k: 5
+  rrf_k: 60                # Reciprocal Rank Fusion constant (dense + BM25)
+  reranker_enabled: false  # rejected on latency evidence - see note above
+  reranker_model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  rerank_top_n: 50         # only used when reranker_enabled: true
+
+llm:
+  provider: "anthropic"
+  model: "claude-haiku-4-5"
+  temperature: 0.0          # allowed on Haiku 4.5 (not an Opus 4.7/4.8 model)
+  max_tokens: 800
+  # Eval judge - MUST differ from + be stronger than the generator (a model
+  # grading its own output biases the eval). Sonnet 4.6 judges Haiku's answers.
+  judge_model: "claude-sonnet-4-6"

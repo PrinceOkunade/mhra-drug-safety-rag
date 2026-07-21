@@ -1,0 +1,30 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/raw/
+data/index/
+models/
+.pytest_cache/
+
+# editor / OS / logs
+.vscode/
+*.log
+# training-run artefacts (the fine-tuned reranker was measured then rejected)
+checkpoints/
+# stray / duplicate / personal files kept out of the public repo
+chunk__init__.py
+PHASE2_SPEC (1).md
+review of RAG Section of CV.txt
+# personal / intermediate artefacts kept out of the public repo (still on disk)
+LEARNING_NOTES.md
+RESUME_BULLETS.md
+eval/drafts/
+eval/reranker_train_pairs.jsonl
+
+# internal planning docs / dead cloud config - not for the public repo
+PROJECT_PLAN.md
+PHASE2_SPEC.md
+DESIGN_RULES.md
+.gcloudignore
+ARTICLE.md

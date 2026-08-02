@@ -1,0 +1,11 @@
+# Streamlit theme - forced DARK mode + a rich accent palette.
+# Native colours (buttons, sidebar, expanders, metrics) come from here; the custom
+# Inter font, hero section, gradients and card depth are layered on via CSS in
+# streamlit_app.py. Colours are applied natively so components stay consistent.
+[theme]
+base = "dark"                        # force dark mode regardless of the visitor's OS setting
+primaryColor = "#2DD4BF"             # teal-400: accent for buttons, links, focus
+backgroundColor = "#0B1120"          # deep slate-navy canvas (not flat black)
+secondaryBackgroundColor = "#141C2E" # cards, sidebar, expanders - one step lighter
+textColor = "#E6EDF3"                # soft off-white for comfortable reading on dark
+font = "sans serif"

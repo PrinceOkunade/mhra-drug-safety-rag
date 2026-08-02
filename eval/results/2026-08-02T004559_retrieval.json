@@ -1,0 +1,564 @@
+{
+  "timestamp": "2026-08-02T00:45:59",
+  "gold_set_version": "v0.2+corpus:cd315f17d0d9",
+  "config": {
+    "chunk_strategy": "fixed",
+    "chunk_size_tokens": 512,
+    "chunk_overlap_tokens": 50,
+    "embedding_model": "NeuML/pubmedbert-base-embeddings",
+    "retriever_type": "dense",
+    "top_k": 5,
+    "reranker_enabled": false,
+    "generation_model": "claude-haiku-4-5",
+    "judge_model": "claude-sonnet-4-6",
+    "generation_temperature": 0.0,
+    "match_token_overlap_threshold": 0.9,
+    "eval_retrieval_k": 10
+  },
+  "retrieval": {
+    "recall": {
+      "recall@1": {
+        "n": 35,
+        "d": 64,
+        "pct": 54.7
+      },
+      "recall@3": {
+        "n": 49,
+        "d": 64,
+        "pct": 76.6
+      },
+      "recall@5": {
+        "n": 53,
+        "d": 64,
+        "pct": 82.8
+      },
+      "recall@10": {
+        "n": 58,
+        "d": 64,
+        "pct": 90.6
+      }
+    },
+    "recall_str": {
+      "recall@1": "35/64 (55%)",
+      "recall@3": "49/64 (77%)",
+      "recall@5": "53/64 (83%)",
+      "recall@10": "58/64 (91%)"
+    },
+    "mrr": 0.6725,
+    "n_answerable": 64
+  },
+  "per_item": [
+    {
+      "id": "q001",
+      "answerable": true,
+      "type": "multi_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q002",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "verbatim",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q003",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "q004",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q005",
+      "answerable": true,
+      "type": "multi_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 8
+    },
+    {
+      "id": "q006",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "patient",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "q007",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "q008",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 4
+    },
+    {
+      "id": "q009",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 4
+    },
+    {
+      "id": "q010",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "patient",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "q011",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "q012",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "patient",
+      "phrasing": "verbatim",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q013",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "q014",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q015",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "patient",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q016",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 8
+    },
+    {
+      "id": "q021",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "patient",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q022",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "q023",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q024",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q025",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q026",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q027",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "q028",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 5
+    },
+    {
+      "id": "q029",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 3
+    },
+    {
+      "id": "q030",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "patient",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 9
+    },
+    {
+      "id": "q031",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "verbatim",
+      "first_relevant_rank": null
+    },
+    {
+      "id": "q032",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "verbatim",
+      "first_relevant_rank": null
+    },
+    {
+      "id": "q033",
+      "answerable": true,
+      "type": "multi_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 9
+    },
+    {
+      "id": "q034",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q035",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q036",
+      "answerable": true,
+      "type": "multi_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q041",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": null
+    },
+    {
+      "id": "q042",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "patient",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q043",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q044",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "q045",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q046",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "verbatim",
+      "first_relevant_rank": null
+    },
+    {
+      "id": "q047",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": null
+    },
+    {
+      "id": "q048",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 5
+    },
+    {
+      "id": "q049",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "patient",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q050",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q051",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": null
+    },
+    {
+      "id": "q052",
+      "answerable": true,
+      "type": "multi_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 3
+    },
+    {
+      "id": "q053",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q054",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "patient",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 3
+    },
+    {
+      "id": "q055",
+      "answerable": true,
+      "type": "multi_passage",
+      "register": "patient",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q056",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "verbatim",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q061",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q062",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "q063",
+      "answerable": true,
+      "type": "multi_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q064",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "patient",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q065",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q066",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q067",
+      "answerable": true,
+      "type": "multi_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q068",
+      "answerable": true,
+      "type": "multi_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q069",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q070",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "patient",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q071",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q072",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "q073",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q074",
+      "answerable": true,
+      "type": "multi_passage",
+      "register": "HCP",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q075",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "verbatim",
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "q076",
+      "answerable": true,
+      "type": "single_passage",
+      "register": "either",
+      "phrasing": "paraphrased",
+      "first_relevant_rank": 6
+    }
+  ]
+}

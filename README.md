@@ -8,7 +8,7 @@ A retrieval-augmented question-answering system over **UK MHRA Drug Safety
 Updates**. The portfolio point is not "a chatbot" - it is **evaluated retrieval
 engineering**: a deliberately naive baseline that improves *one measured change at
 a time*, where every change (including the ones that failed) is gated by a
-reproducible measurement against a human-certified benchmark.
+reproducible measurement against a self-authored, source-verified benchmark.
 
 > **This is an information-retrieval demonstrator over MHRA source text. It is NOT
 > medical advice.** Every answer is grounded in and cited to gov.uk source
@@ -55,16 +55,25 @@ and not judged.
 | Phase 1 baseline (fixed chunking) | 70% (45/64) | 94% (60/64) | 0.826 | - | denominator |
 | Exp 1 - header-aware + min-section floor | 69% (44/64) | 89% (57/64) | 0.803 | - | **rejected** - diagnosed negative |
 | Exp 2 - small-to-big (parent-document) | 73% (47/64) | 97% (62/64) | 0.853 | - | adopted |
+| Exp 2c - semantic chunking (breakpoint) | 66% (42/64) | 91% (58/64) | 0.789 | - | **rejected** - over-fragmentation |
 | Exp 3 - hybrid search (dense + BM25, RRF) | 81% (52/64) | 97% (62/64) | 0.890 | **0.19 s** (n=20) | best retrieval |
 | Exp 4 - metadata schema (register / date) | - | - | - | - | **null** - 6/6 = 6/6 on adversarial probes |
 | Exp 5a - off-the-shelf cross-encoder rerank | 80% (51/64) | 100% (64/64) | 0.891 | 39.01 s (n=8) | **rejected for deploy** - 15x latency, no quality gain |
 | Exp 5b - **fine-tuned** cross-encoder rerank | 72% (46/64) | 97% (62/64) | 0.838 | - | **rejected** - overfit / dist. mismatch |
+| Exp 6a - bge-large embedder (10x larger) | 80% (51/64) | 95% (61/64) | 0.879 | - | **rejected** - no gain, higher memory |
+| Exp 6b - PubMedBERT embedder (domain-specific) | 64% (41/64) | 88% (56/64) | 0.775 | - | **rejected** - register mismatch (worst) |
 | **CHAMPION - hybrid search (deployed)** | **81% (52/64)** | **97% (62/64)** | **0.890** | **0.19 s** (n=20) | **system-of-record** |
 
 Latency is **retrieval-only median** on a 4-CPU box (`python -m src.eval.bench_latency`),
 measured only for the two configurations that are actual serving candidates - the
 rejected experiments were never latency-profiled, so those cells are honestly blank
 rather than back-filled with guesses.
+
+**Comparison bases:** chunking experiments (Exp 1, 2, 2c) are measured with dense
+retrieval, so compare them to the **70% baseline**; the embedder swaps (Exp 6a/6b)
+were run on the deployed **hybrid** config, so compare them to the **81% champion**.
+Both "obvious upgrades" - a 10x-larger model and a domain-specific medical one -
+*failed*, which is why the small general `bge-small` stays.
 
 ### The quality/latency tradeoff (measured, not estimated)
 
@@ -138,10 +147,10 @@ measure it cleanly before it was cut; flipping `reranker_enabled: true` re-enabl
 
 ## The evaluation harness (the measuring instrument)
 
-- **80-question gold set** (64 answerable + 16 unanswerable), **human-certified**
-  in batches against a **pinned corpus snapshot**, with **chunking-independent
-  ground truth** (source URL + verbatim passage, never chunk IDs) so retrieval
-  changes are compared fairly.
+- **80-question gold set** (64 answerable + 16 unanswerable), **self-authored and
+  verified against source passages** in a **pinned corpus snapshot**, with
+  **chunking-independent ground truth** (source URL + verbatim passage, never chunk
+  IDs) so retrieval changes are compared fairly.
 - **LLM-as-judge** (Claude Sonnet 4.6 - a *different, stronger* model than the
   Haiku generator, to avoid self-grading bias) scoring answer-correctness
   (correct / incomplete / wrong), faithfulness, and refusal-correctness. The judge
@@ -156,7 +165,8 @@ measure it cleanly before it was cut; flipping `reranker_enabled: true` re-enabl
 ## Setup (Windows / PowerShell)
 
 ```powershell
-cd "$env:USERPROFILE\Desktop\claude\RAG Project"
+git clone https://github.com/PrinceOkunade/mhra-drug-safety-rag.git
+cd mhra-drug-safety-rag
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt

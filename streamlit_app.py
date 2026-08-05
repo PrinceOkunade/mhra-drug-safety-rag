@@ -12,8 +12,15 @@ from __future__ import annotations
 
 import json
 import os
+import time
 
 import streamlit as st
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv()  # local dev: pick up ANTHROPIC_API_KEY from .env for the live-query box
+except Exception:
+    pass
 
 from src.config import ROOT
 
@@ -157,7 +164,13 @@ def live_query(question: str, api_key: str) -> None:
 
     with st.spinner("Retrieving + generating (first run loads the models, ~1-2 min)..."):
         cfg = load_config()
+        t0 = time.perf_counter()
         res = answer_question(question, cfg)
+        dt = time.perf_counter() - t0
+    # Per-query latency + retrieval size, so you can see how it performs live.
+    m1, m2 = st.columns(2)
+    m1.metric("Response time", f"{dt:.1f} s")
+    m2.metric("Chunks retrieved", len(res["hits"]))
     show_result({
         "question": question, "adversarial": False,
         "answer": res["answer"], "sources": res["sources"],
@@ -218,15 +231,36 @@ if cache.get("config"):
     c = cache["config"]
     st.caption(f"Champion | {c['retriever']} retrieval | {c['embedder'].split('/')[-1]} | {c['generator']}")
 
-# ---- Optional live query (bring your own key) ----
+# ---- Live query: type your own question ----
+# If a key is configured on the deployment (Streamlit secret or env), anyone can type a
+# question and it runs on that key. Otherwise, visitors bring their own key.
 st.divider()
-with st.expander("🔑 Run your own question (bring your own Anthropic API key)"):
-    st.caption("Your key is used only for this request, in this session - never stored or logged. "
-               "The example answers above need no key.")
-    key = st.text_input("Anthropic API key (sk-ant-...)", type="password")
-    q = st.text_input("Your question about a UK drug-safety update")
-    if st.button("Run live query", disabled=not (key and q)):
+st.markdown('<div class="eyebrow">Ask your own question (live)</div>', unsafe_allow_html=True)
+
+_owner_key = None
+try:
+    _owner_key = st.secrets.get("ANTHROPIC_API_KEY")  # set in Streamlit Cloud -> Settings -> Secrets
+except Exception:
+    _owner_key = None
+_owner_key = _owner_key or os.getenv("ANTHROPIC_API_KEY")
+
+if _owner_key:
+    st.caption("Type a UK drug-safety question and see the live answer, its cited sources, and the "
+               "response time. This runs the real pipeline (hybrid retrieval + Claude), not a cache.")
+    q = st.text_input("Your question", key="liveq", placeholder="e.g. What is the cardiac risk with omega-3 medicines?")
+    if st.button("Run live query", type="primary", disabled=not q):
         try:
-            live_query(q, key)
+            live_query(q, _owner_key)
         except Exception as exc:
             st.error(f"Live query failed: {exc}")
+else:
+    with st.expander("🔑 Run your own question (bring your own Anthropic API key)"):
+        st.caption("No key is configured on this deployment, so bring your own. It is used only for this "
+                   "request, in this session - never stored or logged. The example answers above need no key.")
+        key = st.text_input("Anthropic API key (sk-ant-...)", type="password")
+        q = st.text_input("Your question about a UK drug-safety update")
+        if st.button("Run live query", disabled=not (key and q)):
+            try:
+                live_query(q, key)
+            except Exception as exc:
+                st.error(f"Live query failed: {exc}")

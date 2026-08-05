@@ -70,41 +70,41 @@ p, li, a, label, button, input, textarea, select, .stMarkdown,
 
 /* Header - flat, solid, clear hierarchy (no gradient) */
 .badge{ display:inline-block; font-size:.7rem; font-weight:700; letter-spacing:.14em;
-  color:#0F766E; background:rgba(13,148,136,.10); border:1px solid rgba(13,148,136,.28);
+  color:#2563EB; background:rgba(37,99,235,.10); border:1px solid rgba(37,99,235,.28);
   padding:.28rem .65rem; border-radius:6px; margin-bottom:.7rem; }
 h1.title{ font-size:2.3rem; font-weight:900; letter-spacing:-.025em; margin:0 0 .3rem; color:#111927; }
-.title .accent{ color:#0F766E; }
+.title .accent{ color:#2563EB; }
 .sub{ color:#556072; font-size:1rem; max-width:760px; margin:0 0 .9rem; }
 .pills{ display:flex; flex-wrap:wrap; gap:.45rem; }
 .pill{ font-size:.78rem; font-weight:600; padding:.32rem .7rem; border-radius:6px;
   background:#EEF2F7; border:1px solid rgba(15,30,55,.10); color:#475569; }
-.pill.key{ background:rgba(13,148,136,.10); border-color:rgba(13,148,136,.30); color:#0F766E; }
+.pill.key{ background:rgba(37,99,235,.10); border-color:rgba(37,99,235,.30); color:#2563EB; }
 
 /* Section labels - the small uppercase eyebrow that titles each region */
 .eyebrow{ font-size:.72rem; font-weight:800; letter-spacing:.13em; color:#64748B;
   text-transform:uppercase; margin:0 0 .5rem; }
 .cardh{ font-size:.98rem; font-weight:800; margin:0 0 .55rem; display:flex; align-items:center; gap:.4rem; }
-.cardh.ans{ color:#0F766E; } .cardh.prov{ color:#2563EB; } .cardh.ask{ color:#111927; }
+.cardh.ans{ color:#2563EB; } .cardh.prov{ color:#1E40AF; } .cardh.ask{ color:#111927; }
 
 /* Bordered FRAMES for the three areas (Streamlit container border=True) */
 [data-testid="stVerticalBlockBorderWrapper"]{
   background:#FFFFFF; border:1px solid #E3E8EF !important; border-radius:14px;
   padding:1rem 1.15rem; box-shadow:0 10px 26px -22px rgba(15,30,55,.28);
 }
-/* The ask frame stands out: subtle teal edge */
-.askwrap [data-testid="stVerticalBlockBorderWrapper"]{ border-color:#BFE3DE !important;
-  background:#FBFEFE; box-shadow:0 12px 26px -20px rgba(13,148,136,.35); }
+/* The ask frame stands out: subtle blue edge */
+.askwrap [data-testid="stVerticalBlockBorderWrapper"]{ border-color:#BFD3F5 !important;
+  background:#FAFCFF; box-shadow:0 12px 26px -20px rgba(37,99,235,.35); }
 
 /* Question list buttons: left-aligned, roomy, clear hover/active */
 .stButton button{ text-align:left; justify-content:flex-start; white-space:normal; height:auto;
   padding:.58rem .8rem; border-radius:9px; font-weight:500; font-size:.9rem; line-height:1.35;
   border:1px solid #E3E8EF; background:#FFFFFF; }
-.stButton button:hover{ border-color:#0F766E; color:#0F766E; background:#F2FBFA; }
+.stButton button:hover{ border-color:#2563EB; color:#2563EB; background:#EFF4FF; }
 
 .qtitle{ font-size:1.15rem; font-weight:800; letter-spacing:-.01em; margin:.1rem 0 .5rem; color:#111927; }
 .answer h3{ font-size:1.02rem; margin:.8rem 0 .35rem; } .answer h4{ font-size:.94rem; margin:.7rem 0 .25rem; }
 [data-testid="stExpander"]{ border-radius:9px; border-color:#E3E8EF; }
-a{ color:#0F766E; }
+a{ color:#2563EB; }
 hr{ margin:1.3rem 0; }
 </style>
 """, unsafe_allow_html=True)
@@ -138,15 +138,13 @@ def render_detail(entry: dict, latency: float | None) -> None:
         a, b = st.columns(2)
         a.metric("Response time", f"{latency:.1f} s")
         b.metric("Chunks retrieved", len(entry.get("chunks", [])))
-    ans_col, prov_col = st.columns(2, gap="medium")
-    with ans_col:
-        with st.container(border=True):
-            st.markdown('<div class="cardh ans">💬 Grounded answer</div>', unsafe_allow_html=True)
-            render_answer(entry)
-    with prov_col:
-        with st.container(border=True):
-            st.markdown('<div class="cardh prov">🔍 Retrieved provenance</div>', unsafe_allow_html=True)
-            render_chunks(entry)
+    # Stacked (not side by side): answer frame first, then provenance frame below it.
+    with st.container(border=True):
+        st.markdown('<div class="cardh ans">💬 Grounded answer</div>', unsafe_allow_html=True)
+        render_answer(entry)
+    with st.container(border=True):
+        st.markdown('<div class="cardh prov">🔍 Retrieved provenance</div>', unsafe_allow_html=True)
+        render_chunks(entry)
 
 
 def run_live(question: str, api_key: str) -> tuple[dict, float]:

@@ -3,7 +3,7 @@
 # and custom classes are layered on via CSS in streamlit_app.py.
 [theme]
 base = "light"
-primaryColor = "#0F766E"             # teal-700 accent (buttons, links, focus)
+primaryColor = "#2563EB"             # blue accent (buttons, links, focus)
 backgroundColor = "#F6F8FB"          # soft off-white canvas
 secondaryBackgroundColor = "#FFFFFF" # cards / widgets
 textColor = "#16202E"                # dark slate for comfortable reading on light

@@ -9,141 +9,130 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#F6F8FB; --card:#FFFFFF; --card-2:#EEF3F8; --line:rgba(15,30,55,.12);
-    --text:#16202E; --muted:#4C596B; --muted-2:#6B7688;
-    --teal:#0F766E; --sky:#2563EB; --violet:#7C3AED; --blue:#2563EB;
+    --bg:#F6F8FB; --card:#FFFFFF; --line:#E3E8EF;
+    --text:#111927; --muted:#556072; --muted-2:#6B7688;
+    --blue:#2563EB; --blue-d:#1E40AF;
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0}
-  body{
-    font-family:'Inter',-apple-system,'Segoe UI',system-ui,sans-serif;
-    background:var(--bg); color:var(--text); line-height:1.55;
-    -webkit-font-smoothing:antialiased;
-  }
-  a{color:#0F766E;text-decoration:none} a:hover{text-decoration:underline}
-  .wrap{max-width:1320px;margin:0 auto;padding:22px 22px 70px}
+  body{ font-family:'Inter',-apple-system,'Segoe UI',system-ui,sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.55; -webkit-font-smoothing:antialiased; }
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:1280px;margin:0 auto;padding:26px 22px 70px}
+  hr{border:none;border-top:1px solid var(--line);margin:1.4rem 0}
 
-  /* Hero */
-  .hero{
-    position:relative;padding:2.4rem 2.4rem 2rem;border-radius:22px;overflow:hidden;
-    border:1px solid rgba(15,30,55,.10);
-    background:
-      radial-gradient(1100px 380px at 12% -20%, rgba(13,148,136,.12), transparent 60%),
-      radial-gradient(900px 420px at 92% 0%, rgba(124,58,237,.10), transparent 60%),
-      linear-gradient(135deg,#EFFBFA 0%, #FFFFFF 70%);
-    box-shadow:0 22px 50px -34px rgba(15,118,110,.35);
-  }
-  .badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;
-    color:#0F766E;background:rgba(13,148,136,.10);border:1px solid rgba(13,148,136,.28);
-    padding:.3rem .7rem;border-radius:999px;margin-bottom:.9rem}
-  .hero h1{font-size:2.7rem;font-weight:900;line-height:1.05;letter-spacing:-.03em;margin:0;
-    background:linear-gradient(92deg,#0D9488 0%, #2563EB 48%, #7C3AED 100%);
-    -webkit-background-clip:text;background-clip:text;color:transparent}
-  .sub{color:var(--muted);font-size:1.04rem;max-width:760px;margin:.7rem 0 1.1rem}
-  .pills{display:flex;flex-wrap:wrap;gap:.5rem}
-  .pill{font-size:.82rem;font-weight:600;padding:.36rem .78rem;border-radius:999px;
-    background:#F1F5F9;border:1px solid rgba(15,30,55,.12);color:#475569}
-  .pill.green{background:rgba(13,148,136,.10);border-color:rgba(13,148,136,.30);color:#0F766E}
-  .pill.violet{background:rgba(124,58,237,.10);border-color:rgba(124,58,237,.30);color:#6D28D9}
+  /* Flat header (no gradient) */
+  .badge{ display:inline-block; font-size:.7rem; font-weight:700; letter-spacing:.14em;
+    color:var(--blue); background:rgba(37,99,235,.10); border:1px solid rgba(37,99,235,.28);
+    padding:.28rem .65rem; border-radius:6px; margin-bottom:.7rem; }
+  h1{ font-size:2.4rem; font-weight:900; letter-spacing:-.025em; margin:.1rem 0 .3rem; color:var(--text); }
+  h1 .accent{ color:var(--blue); }
+  .sub{ color:var(--muted); font-size:1rem; max-width:760px; margin:0 0 .9rem; }
+  .pills{ display:flex; flex-wrap:wrap; gap:.45rem; }
+  .pill{ font-size:.78rem; font-weight:600; padding:.32rem .7rem; border-radius:6px;
+    background:#EEF2F7; border:1px solid rgba(15,30,55,.10); color:#475569; }
+  .pill.key{ background:rgba(37,99,235,.10); border-color:rgba(37,99,235,.30); color:var(--blue); }
 
-  .demo-note{background:rgba(37,99,235,.06);border:1px solid rgba(37,99,235,.20);border-radius:12px;
-    padding:.7rem 1rem;font-size:.86rem;color:var(--muted);margin:16px 0 4px;line-height:1.5}
-  .demo-note b{color:var(--text)}
+  /* CTA: type your own -> interactive app */
+  .cta{ display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;
+    background:#FAFCFF; border:1px solid #BFD3F5; border-radius:14px; padding:1rem 1.2rem; margin:20px 0 4px;
+    box-shadow:0 12px 26px -20px rgba(37,99,235,.35); }
+  .cta-h{ font-weight:800; font-size:1.02rem; color:var(--text); }
+  .cta-sub{ font-size:.87rem; color:var(--muted); margin-top:.15rem; max-width:640px; }
+  .cta-btn{ background:var(--blue); color:#fff !important; font-weight:700; font-size:.9rem;
+    padding:.62rem 1.1rem; border-radius:10px; white-space:nowrap; }
+  .cta-btn:hover{ background:#1D4ED8; text-decoration:none; }
 
-  /* MASTER-DETAIL: questions left, answer + provenance right */
-  .main{display:grid;grid-template-columns:340px 1fr;gap:24px;align-items:start;margin-top:18px}
-  .qcol .eyebrow{margin-bottom:.7rem}
-  .qcol{position:sticky;top:16px}
-  .eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.12em;color:#0F766E;text-transform:uppercase}
+  /* Master-detail */
+  .main{ display:grid; grid-template-columns:340px 1fr; gap:24px; align-items:start; margin-top:20px; }
+  @media(max-width:900px){ .main{ grid-template-columns:1fr } .qcol{ position:static !important } }
+  .eyebrow{ font-size:.72rem; font-weight:800; letter-spacing:.13em; color:#64748B; text-transform:uppercase; margin-bottom:.55rem; }
 
-  /* Questions: a vertical clickable list */
-  .examples{display:flex;flex-direction:column;gap:.5rem}
-  .qbtn{text-align:left;width:100%;background:var(--card);color:#1F2937;border:1px solid rgba(15,30,55,.14);
-    border-radius:12px;padding:.7rem .9rem;font:inherit;font-weight:500;font-size:.9rem;
-    cursor:pointer;transition:all .15s ease;line-height:1.35}
-  .qbtn:hover{border-color:#0F766E;color:#0F766E;background:#F0FBFA;
-    box-shadow:0 0 0 1px rgba(13,148,136,.20),0 8px 20px -15px rgba(13,148,136,.55)}
-  .qbtn.active{border-color:#0F766E;color:#0F766E;background:#EAF7F5;box-shadow:0 0 0 1px rgba(13,148,136,.35)}
-  .qbtn .adv{color:#6D28D9}
+  /* Bordered frames */
+  .frame{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1rem 1.15rem;
+    box-shadow:0 10px 26px -22px rgba(15,30,55,.28); }
+  .qcol{ position:sticky; top:16px; }
 
-  /* Right side: the selected answer + its retrieved chunks */
-  .qtitle{font-size:1.3rem;font-weight:800;letter-spacing:-.01em;margin:.1rem 0 .2rem;color:var(--text)}
-  .cols{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:14px}
-  @media(max-width:1200px){.cols{grid-template-columns:1fr}}
-  .panel{background:var(--card);border:1px solid rgba(15,30,55,.10);border-radius:16px;
-    padding:1.1rem 1.2rem;box-shadow:0 12px 30px -22px rgba(15,30,55,.22)}
-  .ph{font-size:1.02rem;font-weight:800;margin:.1rem 0 .7rem}
-  .ph.ans{color:#0F766E} .ph.prov{color:#2563EB}
-  .answer h3{font-size:1.05rem;margin:.9rem 0 .4rem} .answer h4{font-size:.96rem;margin:.8rem 0 .3rem}
-  .answer p{margin:.5rem 0} .answer ul{margin:.4rem 0 .6rem;padding-left:1.2rem} .answer li{margin:.2rem 0}
-  .warn{background:rgba(124,58,237,.08);border:1px solid rgba(124,58,237,.25);color:#6D28D9;
-    padding:.6rem .8rem;border-radius:10px;font-size:.9rem;margin-bottom:.8rem}
-  .srcs{margin-top:1rem;font-size:.9rem}
-  .srcs .h{font-weight:700;margin-bottom:.3rem}
-  .chunk{border:1px solid rgba(15,30,55,.12);border-radius:10px;margin-bottom:.6rem;overflow:hidden;background:#FBFCFE}
-  .chunk summary{cursor:pointer;padding:.6rem .8rem;font-size:.85rem;color:#475569;list-style:none}
-  .chunk summary::-webkit-details-marker{display:none}
-  .chunk[open] summary{border-bottom:1px solid var(--line)}
-  .chunk .body{padding:.7rem .8rem;font-size:.86rem;color:var(--muted)}
-  .score{color:#0F766E;font-weight:700}
+  /* Questions: vertical list */
+  .examples{ display:flex; flex-direction:column; gap:.5rem; }
+  .qbtn{ text-align:left; width:100%; background:#fff; color:#1F2937; border:1px solid var(--line);
+    border-radius:9px; padding:.58rem .8rem; font:inherit; font-weight:500; font-size:.9rem;
+    cursor:pointer; line-height:1.35; transition:all .15s ease; }
+  .qbtn:hover{ border-color:var(--blue); color:var(--blue); background:#EFF4FF; }
+  .qbtn.active{ border-color:var(--blue); color:var(--blue); background:#EAF1FF; box-shadow:0 0 0 1px rgba(37,99,235,.35); }
+  .qbtn .adv{ color:#6D28D9; }
 
-  /* Methodology strip (bottom, horizontal) */
-  .method{margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
-  .method p{font-size:.9rem;color:var(--muted);margin:.3rem 0 .8rem;max-width:820px}
-  .mrow{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:.8rem}
-  .mcard{background:var(--card);border:1px solid rgba(15,30,55,.10);border-radius:12px;
-    padding:.65rem 1.1rem;box-shadow:0 8px 22px -19px rgba(15,30,55,.22)}
-  .mcard .v{font-size:1.4rem;font-weight:800;letter-spacing:-.02em}
-  .mcard .l{font-size:.78rem;color:var(--muted-2)}
-  .neg{font-size:.86rem;color:var(--muted);max-width:900px}
-  .neg b{color:var(--text)}
-  #champion{font-size:.8rem;color:var(--muted-2);margin-top:.7rem}
+  /* Right side: stacked answer frame + provenance frame */
+  .qtitle{ font-size:1.2rem; font-weight:800; letter-spacing:-.01em; margin:.1rem 0 .7rem; color:var(--text); }
+  .rframe{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1rem 1.15rem;
+    box-shadow:0 10px 26px -22px rgba(15,30,55,.28); margin-bottom:16px; }
+  .cardh{ font-size:1rem; font-weight:800; margin:0 0 .55rem; }
+  .cardh.ans{ color:var(--blue); } .cardh.prov{ color:var(--blue-d); }
+  .answer h3{ font-size:1.02rem; margin:.8rem 0 .35rem; } .answer h4{ font-size:.94rem; margin:.7rem 0 .25rem; }
+  .answer p{ margin:.5rem 0; } .answer ul{ margin:.4rem 0 .6rem; padding-left:1.2rem; } .answer li{ margin:.2rem 0; }
+  .warn{ background:rgba(124,58,237,.08); border:1px solid rgba(124,58,237,.25); color:#6D28D9;
+    padding:.55rem .8rem; border-radius:9px; font-size:.9rem; margin-bottom:.8rem; }
+  .srcs{ margin-top:1rem; font-size:.9rem; } .srcs .h{ font-weight:700; margin-bottom:.3rem; }
+  .chunkmeta{ font-size:.82rem; color:var(--muted-2); margin-bottom:.7rem; }
+  .chunk{ border:1px solid var(--line); border-radius:9px; margin-bottom:.6rem; overflow:hidden; background:#FBFCFE; }
+  .chunk summary{ cursor:pointer; padding:.58rem .8rem; font-size:.85rem; color:#475569; list-style:none; }
+  .chunk summary::-webkit-details-marker{ display:none; }
+  .chunk[open] summary{ border-bottom:1px solid var(--line); }
+  .chunk .body{ padding:.7rem .8rem; font-size:.86rem; color:var(--muted); }
+  .score{ color:var(--blue); font-weight:700; }
 
-  .foot{color:var(--muted-2);font-size:.8rem;margin-top:2.2rem;text-align:center}
-
-  @media(max-width:900px){ .main{grid-template-columns:1fr} .qcol{position:static} }
+  /* Methodology */
+  .method p{ font-size:.9rem; color:var(--muted); margin:.3rem 0 .8rem; max-width:820px; }
+  .mrow{ display:flex; flex-wrap:wrap; gap:14px; margin-bottom:.8rem; }
+  .mcard{ background:var(--card); border:1px solid var(--line); border-radius:12px; padding:.65rem 1.1rem;
+    box-shadow:0 8px 22px -19px rgba(15,30,55,.22); }
+  .mcard .v{ font-size:1.4rem; font-weight:800; letter-spacing:-.02em; }
+  .mcard .l{ font-size:.78rem; color:var(--muted-2); }
+  .neg{ font-size:.86rem; color:var(--muted); max-width:900px; } .neg b{ color:var(--text); }
+  #champion{ font-size:.8rem; color:var(--muted-2); margin-top:.7rem; }
+  .foot{ color:var(--muted-2); font-size:.8rem; margin-top:2.2rem; text-align:center; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="hero">
-    <span class="badge">RETRIEVAL-AUGMENTED | MHRA DRUG SAFETY</span>
-    <h1>Grounded Medical RAG</h1>
-    <p class="sub">Ask about UK drug-safety advice and see the exact source passages behind every
-      answer - grounded, cited, and refusing to guess when the evidence isn't there.</p>
-    <div class="pills">
-      <span class="pill">143 MHRA articles</span>
-      <span class="pill">64-question gold set</span>
-      <span class="pill green">100% faithful (64/64)</span>
-      <span class="pill green">0 hallucinations</span>
-      <span class="pill violet">16/16 adversarial refused</span>
-    </div>
-  </header>
+  <span class="badge">RETRIEVAL-AUGMENTED | MHRA DRUG SAFETY</span>
+  <h1>Grounded <span class="accent">Medical RAG</span></h1>
+  <p class="sub">Ask about UK drug-safety advice and see the exact source passages behind every
+    answer - grounded, cited, and refusing to guess when the evidence isn't there.</p>
+  <div class="pills">
+    <span class="pill">143 MHRA articles</span>
+    <span class="pill">81% top-1 retrieval</span>
+    <span class="pill key">100% faithful (64/64)</span>
+    <span class="pill key">16/16 adversarial refused</span>
+  </div>
 
-  <div class="demo-note">📋 These are <b>curated examples with cached answers</b>, so this preview loads
-    instantly and needs no API key. The <b>full system</b> - live retrieval + generation and the
-    <b>evaluation harness</b> that measured it - runs from the
-    <a href="https://github.com/PrinceOkunade/mhra-drug-safety-rag" target="_blank" rel="noopener">GitHub repo</a>.
-    ⚠️ Information-retrieval demonstrator - <b>NOT medical advice</b>.</div>
+  <!-- CTA to the interactive app (this static page can't run the model live) -->
+  <div class="cta">
+    <div>
+      <div class="cta-h">Want to type your own question?</div>
+      <div class="cta-sub">The examples below are curated with cached answers (instant, no key). The
+        interactive app runs the real pipeline live on any question you type.</div>
+    </div>
+    <a class="cta-btn" href="https://mhra-drug-safety-rag-istdi6tykr79rzfsv25r87.streamlit.app" target="_blank" rel="noopener">Open the interactive app -&gt;</a>
+  </div>
 
   <div class="main">
-    <!-- LEFT: the questions -->
-    <aside class="qcol">
-      <div class="eyebrow">Pick a question</div>
+    <!-- LEFT: questions -->
+    <aside class="qcol frame">
+      <div class="eyebrow">Curated examples</div>
       <div class="examples" id="examples"></div>
     </aside>
-
-    <!-- RIGHT: the answer + retrieved provenance for the selected question -->
+    <!-- RIGHT: stacked answer + provenance frames -->
     <section class="detail">
       <div id="result"></div>
     </section>
   </div>
 
-  <!-- Methodology, moved to a horizontal strip at the bottom -->
+  <hr>
   <div class="method">
-    <div class="eyebrow">How it's measured</div>
-    <p>Evaluated on a self-authored 64-question gold set (+16 adversarial), each verified against a
-      source passage, and judged by a stronger model (Claude Sonnet) than the generator.</p>
+    <div class="eyebrow">How it is measured</div>
+    <p>Self-authored 64-question gold set (+16 adversarial), each verified against a source passage,
+      judged by a stronger model (Claude Sonnet) than the generator.</p>
     <div class="mrow">
       <div class="mcard"><div class="v">63 / 64</div><div class="l">Answer correctness</div></div>
       <div class="mcard"><div class="v">64 / 64</div><div class="l">Faithfulness (no hallucination)</div></div>
@@ -151,19 +140,17 @@
       <div class="mcard"><div class="v">81%</div><div class="l">Top-1 retrieval (recall@1)</div></div>
     </div>
     <div class="neg"><b>Honest negatives (measured, then rejected):</b> header-aware chunking underperformed
-      the fixed baseline; a cross-encoder reranker added ~15x latency with no end-to-end gain, so it was
-      cut from the deployed system.</div>
+      the fixed baseline; a cross-encoder reranker added ~15x latency with no end-to-end gain, so it was cut.</div>
     <div id="champion"></div>
   </div>
 
   <div class="foot">
     Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright / MHRA.<br>
-    Champion: hybrid retrieval (dense + BM25) | bge-small-en-v1.5 | Claude Haiku | no reranker.
+    Champion: hybrid retrieval (dense + BM25) | bge-small-en-v1.5 | Claude Haiku | no reranker. NOT medical advice.
   </div>
 </div>
 
 <script>
-// Minimal markdown -> HTML for the cached answers (headings, bold, links, bullet lists, paragraphs).
 function md(src){
   const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   const lines = src.split('\n');
@@ -189,6 +176,7 @@ function md(src){
   return html;
 }
 function slug(u){ const p=u.split('/').filter(Boolean).pop()||u; return p.length>78?p.slice(0,78)+'...':p; }
+function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
 let DATA=null, SEL=0;
 function renderExamples(){
@@ -200,30 +188,27 @@ function renderExamples(){
     box.appendChild(b);
   });
 }
-function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function renderResult(){
   const ex=DATA.examples[SEL];
   const chunks=ex.chunks.map((c,i)=>`
     <details class="chunk" ${i===0?'open':''}>
       <summary>#${i+1} | <span class="score">score ${c.score}</span>${c.date?' | '+c.date:''} | ${esc((c.title||'').slice(0,52))}</summary>
-      <div class="body"><a href="${c.source_url}" target="_blank" rel="noopener">source article ↗</a>
+      <div class="body"><a href="${c.source_url}" target="_blank" rel="noopener">source article -&gt;</a>
       <p>${esc(c.text.slice(0,800))}${c.text.length>800?'...':''}</p></div>
     </details>`).join('');
   const srcs=(ex.sources||[]).map(u=>`<div>| <a href="${u}" target="_blank" rel="noopener">${esc(slug(u))}</a></div>`).join('');
   document.getElementById('result').innerHTML=`
     <div class="qtitle">${esc(ex.question)}</div>
-    <div class="cols">
-      <div class="panel">
-        <div class="ph ans">💬 Grounded answer</div>
-        ${ex.adversarial?'<div class="warn">🛡️ Adversarial question - not answerable from the corpus. Expect a <b>refusal</b>, not a guess.</div>':''}
-        <div class="answer">${md(ex.answer)}</div>
-        ${srcs?`<div class="srcs"><div class="h">Cited sources</div>${srcs}</div>`:''}
-      </div>
-      <div class="panel">
-        <div class="ph prov">🔍 Retrieved provenance</div>
-        <div style="font-size:.82rem;color:var(--muted-2);margin-bottom:.6rem">${ex.chunks.length} chunks retrieved | hybrid dense + BM25, top-k</div>
-        ${chunks}
-      </div>
+    <div class="rframe">
+      <div class="cardh ans">💬 Grounded answer</div>
+      ${ex.adversarial?'<div class="warn">🛡️ Adversarial question - not answerable from the corpus. Expect a <b>refusal</b>, not a guess.</div>':''}
+      <div class="answer">${md(ex.answer)}</div>
+      ${srcs?`<div class="srcs"><div class="h">Cited sources</div>${srcs}</div>`:''}
+    </div>
+    <div class="rframe">
+      <div class="cardh prov">🔍 Retrieved provenance</div>
+      <div class="chunkmeta">${ex.chunks.length} chunks retrieved | hybrid dense + BM25, top-k</div>
+      ${chunks}
     </div>`;
 }
 fetch('demo_cache.json').then(r=>r.json()).then(d=>{
@@ -232,7 +217,7 @@ fetch('demo_cache.json').then(r=>r.json()).then(d=>{
     `Champion | ${c.retriever} retrieval | ${(c.embedder||'').split('/').pop()} | ${c.generator}`;
   renderExamples(); renderResult();
 }).catch(e=>{
-  document.getElementById('result').innerHTML='<div class="panel">Could not load demo_cache.json.</div>';
+  document.getElementById('result').innerHTML='<div class="rframe">Could not load demo_cache.json.</div>';
 });
 </script>
 </body>

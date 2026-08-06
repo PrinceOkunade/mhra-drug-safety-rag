@@ -2,7 +2,10 @@
 
 *Python | sentence-transformers (BGE) | FAISS | BM25 | cross-encoder reranker | Claude | LLM-as-judge evaluation*
 
-**> Live demo:** https://huggingface.co/spaces/PrinceOkunade/MHRA-Drug-Safety-RAG - click a question to see the grounded answer beside the exact source passages it came from.
+**> Try it live (type your own question):** https://mhra-drug-safety-rag-istdi6tykr79rzfsv25r87.streamlit.app
+*(free tier - sleeps when idle, so the first visit takes ~1 min to wake and load the models)*
+
+**> Instant preview (cached examples, no wait):** https://huggingface.co/spaces/PrinceOkunade/MHRA-Drug-Safety-RAG
 
 A retrieval-augmented question-answering system over **UK MHRA Drug Safety
 Updates**. The portfolio point is not "a chatbot" - it is **evaluated retrieval
@@ -199,13 +202,21 @@ Containerized for **Google Cloud Run** (`Dockerfile` bakes the prebuilt index +
 models; the `ANTHROPIC_API_KEY` is a runtime secret, never baked). Build + deploy
 in **[`DEPLOY.md`](DEPLOY.md)**.
 
-## Demo UI (Streamlit)
+## Demo UI
 
-A thin, **provenance-first** demo: each answer is shown next to the exact retrieved
-chunks that produced it (article title, date, retrieval score). Example questions are
-**pre-computed** into `demo_cache.json`, so the public demo runs **instantly, free, and
-with no API key** - clicking an example never calls Claude. An optional *live query*
-lets a visitor run their own question on their **own** Anthropic key.
+A **provenance-first** demo: each answer is shown next to the exact retrieved chunks that
+produced it (article title, date, retrieval score). It ships in two forms:
+
+- **Interactive (Streamlit Community Cloud):**
+  [type your own question](https://mhra-drug-safety-rag-istdi6tykr79rzfsv25r87.streamlit.app)
+  and see the live answer, cited sources, retrieved chunks, and per-query latency. Runs
+  the real pipeline. Free tier, so it **sleeps when idle** (first visit ~1 min to wake).
+- **Static instant preview (Hugging Face Spaces):**
+  [10 curated examples](https://huggingface.co/spaces/PrinceOkunade/MHRA-Drug-Safety-RAG),
+  pre-computed into `demo_cache.json` - loads **instantly, free, no API key**, no wait.
+
+Example questions are cached, so clicking them never calls Claude; only a typed live
+question runs the model.
 
 ```powershell
 python build_cache.py                # one-time: freeze the 10 example responses -> demo_cache.json
